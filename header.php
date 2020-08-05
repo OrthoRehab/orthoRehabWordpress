@@ -16,13 +16,10 @@
 <body <?php body_class(); ?>>
   <div class="blog-masthead">
     <div class="container">
-      <nav class="blog-nav">
-        <a class="blog-nav-item active" href="#">Home</a>
-        <a class="blog-nav-item" href="#">New features</a>
-        <a class="blog-nav-item" href="#">Press</a>
-        <a class="blog-nav-item" href="#">New hires</a>
-        <a class="blog-nav-item" href="#">About</a>
-      </nav>
+      <?php wp_nav_menu( array(
+      'theme_location' => 'header-menu',
+      'menu_class' => 'blog-nav list-inline'
+      ) ); ?>
     </div>
   </div>
 
