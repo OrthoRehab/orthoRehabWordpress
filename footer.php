@@ -3,8 +3,7 @@
 </div><!-- /.container -->
 
 <footer class="blog-footer">
-    <p>Template built for <a href="http://orthorehab.com">OrthoRehab</a></p>
-    <p><a href="#">Back to top</a></p>
+    <?php if ( is_active_sidebar( 'footer-copyright-text' ) ) { dynamic_sidebar( 'footer-copyright-text' ); } ?>
 </footer>
 <?php wp_footer(); ?>
 </body>
